@@ -9,9 +9,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "guzzlehttp/guzzle": "7.0"
-    },
     "autoload": {
         "psr-4": {
             "SayedBilalHussain\\PexCardSdk\\": "/src"
@@ -24,5 +21,8 @@
             ]
         }
     },
-    "license": "MIT"
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    }
 }
