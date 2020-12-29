@@ -2,11 +2,17 @@
 
 namespace SayedBilalHussain\PexCardSdk\Services;
 
-class PexService
+class PexService extends PexParent
 {
-    public static function event(string $name,float $val): string
+
+    private static $url ;
+
+    public function __construct()
     {
-         return $name.'-'.$val;
+        parent::__construct();
+    }
+    public static function event($name,$value){
+        return $name.$value;
     }
 }
 ?>
