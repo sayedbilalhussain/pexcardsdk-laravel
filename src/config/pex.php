@@ -14,11 +14,11 @@ return [
      */
     'key' => [
         'API_URL' => 'https://sandbox-coreapi.pexcard.com/v4/',
-        'CLIENT_ID' => '8cbf3b91',
-        'CLIENT_SECRET' => '5921e70c7480505a80ff918e97470847',
-        'ADMIN_USERNAME'=> 'localbitesapitest',
-        'ADMIN_PASSWORD'=> 'Pexcard3546!2',
-        'DEVELOPER_USERNAME'=>'bilal@redsignal.biz',
-        'DEVELOPER_PASSWORD'=>'Password@1'
+        'CLIENT_ID' => null,
+        'CLIENT_SECRET' => null,
+        'ADMIN_USERNAME'=>null,
+        'ADMIN_PASSWORD'=>null,
+        'DEVELOPER_USERNAME'=>null,
+        'DEVELOPER_PASSWORD'=>''
     ],
 ];

@@ -3,6 +3,10 @@
 
 namespace SayedBilalHussain\PexCardSdk\Services;
 use Exception;
+use Http\Factory\Guzzle;
+use GuzzleHttp;
+
+
 
 class PexParent
 {
@@ -19,3 +23,4 @@ class PexParent
       }
    }
 }
+
