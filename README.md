@@ -1,10 +1,8 @@
 # PEXCARD SDK -PHP-laravel
-Pex Cards PHP Laravel SDK 
-Pex Cards PHP SDK
+Pex Cards PHP SDK | Pex Cards PHP Laravel SDK
 ## Usage
 - requirements 
 ```
-Laravel >= 5.8
 PHP >= 7.0
 Guzzle >= 6.0
 ```
