@@ -42,7 +42,7 @@ $pexService->revokeTokens();
 ```
 
 
-- Revoke/Logout from one token
+- Revoke/Logout from specific token
 
 ```
 use SayedBilalHussain\PexCardSdk\Services\PexService;
