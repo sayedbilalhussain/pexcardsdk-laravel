@@ -122,6 +122,20 @@ class PexService extends PexParent
     }
 
     /**
+     * Delete  Auth Token Logout
+     * @param $token
+     * @return string
+     * @throws Exception
+     */
+    public function revokeToken($token): string
+    {
+            $authString = "token ".$token;
+            $this->setHeader($authString);
+            $this->makeRequest("Token", array(),'DELETE');
+            return "successfully deleted";
+    }
+
+    /**
      * Renew user token
      * @throws Exception
      */
