@@ -32,7 +32,7 @@ $pexService->setToken(<token>);
 $pexService->renewToken();
 $pexService->getToken(); 
 ```
--Revoke/Logout from all created tokens
+- Revoke/Logout from all created tokens
 
 ```
 use SayedBilalHussain\PexCardSdk\Services\PexService;
@@ -40,7 +40,7 @@ use SayedBilalHussain\PexCardSdk\Services\PexService;
 $pexService = new PexService();
 $pexService->revokeTokens();
 ```
--Detail of Tokens (Expiry/App)
+- Detail of Tokens (Expiry/App)
 
 ```
 use SayedBilalHussain\PexCardSdk\Services\PexService;
