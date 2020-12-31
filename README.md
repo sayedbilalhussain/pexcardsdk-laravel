@@ -40,11 +40,21 @@ use SayedBilalHussain\PexCardSdk\Services\PexService;
 $pexService = new PexService();
 $pexService->revokeTokens();
 ```
+
+
+- Revoke/Logout from one token
+
+```
+use SayedBilalHussain\PexCardSdk\Services\PexService;
+
+$pexService = new PexService();
+$pexService->revokeToken(<token>);
+```
 - Detail of Tokens (Expiry/App)
 
 ```
 use SayedBilalHussain\PexCardSdk\Services\PexService;
 
 $pexService = new PexService();
-$pexService->getTokenDetail(<token>);
+$pexService->getTokenDetail(<token>); // this will return detail of all apps and related tokens with detail
 ```
