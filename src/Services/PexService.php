@@ -55,8 +55,7 @@ class PexService extends PexParent
      * Generate user token
      */
 
-    public function generate_user_token() {
-
+    public function generateUserToken() {
         $data = $this->createFormParams([
             'username' => config('pex.key.ADMIN_USERNAME'),
             'password' => config('pex.key.ADMIN_PASSWORD'),
@@ -71,18 +70,19 @@ class PexService extends PexParent
 
         $this->makeRequest($url, $data,'POST');
         $this->setTokenAfterRequest();
-
+        return $this->getToken();
     }
 
     /**
      * Renew user token
      */
-    public function renew_token () {
+    public function renewToken () {
         $url = 'Token/Renew';
         $data = array();
         $this->createHeader();
         $this->makeRequest($url, $data,'POST');
         $this->setTokenAfterRequest();
+        return $this->getToken();
     }
 
     /**
@@ -102,7 +102,7 @@ class PexService extends PexParent
      */
 
     public function createHeader(){
-        if(!is_null($this->access_token)){
+        if(!is_null($this->accessToken)){
             $headers['Authorization'] = "token " . $this->access_token;
             $this->setHeader($headers);
         }
@@ -115,7 +115,7 @@ class PexService extends PexParent
      * Fund Card
      */
 
-    public function FundCard($cardId = null,$amount = null){
+    public function fundCard($cardId = null,$amount = null){
         if(is_null($cardId) || is_null($amount)){
             throw new Exception('CardID and Amount is required');
         }
@@ -136,7 +136,7 @@ class PexService extends PexParent
      * Fund Card Zero
      */
 
-    public function FundCardZero($cardId = null){
+    public function fundCardZero($cardId = null){
         if(is_null($cardId) ){
             throw new Exception('CardID and Amount is required');
         }
