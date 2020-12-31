@@ -4,6 +4,7 @@ Pex Cards PHP SDK | Pex Cards PHP Laravel SDK
 - requirements 
 ```
 PHP >= 7.0
+Laravel >= 5.8
 Guzzle >= 6.0
 ```
 - Installation
