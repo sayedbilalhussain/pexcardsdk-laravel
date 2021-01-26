@@ -63,3 +63,16 @@ use SayedBilalHussain\PexCardSdk\Services\PexService;
 $pexService = new PexService();
 $pexService->getTokenDetail(<token>); // this will return detail of all apps and related tokens with detail
 ```
+
+## Card Funding
+- Fund card
+
+```
+use SayedBilalHussain\PexCardSdk\Services\PexService;
+
+$pex = new PexService();
+$pex->setToken(<token>); \\recently generated token
+$pex->FundCard(<cardID>,<amount>);
+```
+
+
